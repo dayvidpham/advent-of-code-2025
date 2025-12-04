@@ -9,9 +9,7 @@ fn main() -> Result<(), MainError> {
     let mut data = File::open(INPUT_PATH)?;
     data.read_to_string(&mut input)?;
     let (starts, ends) = parse_input(input)?;
-    for (x, y) in std::iter::zip(starts, ends) {
-        println!("{x}, {y}");
-    }
+
     Ok(())
 }
 
