@@ -30,6 +30,7 @@
         packages = [
           rust-toolchain
           fenixPkgs.rust-analyzer
+          pkgs.rusty-man
         ];
         RUST_SRC_PATH = rust-stdlib;
 
